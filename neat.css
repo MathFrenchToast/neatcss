@@ -2,11 +2,15 @@
     color-scheme: dark light;
     --light: #fff;
     --dark: #404040;
+    --gray: #cbcbcb;
+    --success: rgb(28, 184, 65);
+    --error:rgb(202, 60, 60);
+    --warning:rgb(223, 117, 20);
+    --secondary:rgb(66, 184, 221);
 }
 
 * {
-    box-sizing: border-box;
-    color: var(--dark);
+    box-sizing: border-box;    
 }
 
 html {
@@ -27,6 +31,7 @@ input {
 
 body {
     background-color: var(--light);
+    color: var(--dark);
     margin: 0;
     max-width: 800px;
     padding: 0 20px 20px 20px;
@@ -67,6 +72,19 @@ button:last-child, .button:last-child {
     margin-right: 0;
 }
 
+table, td {
+    border-collapse: collapse;
+    border: 1px solid var(--gray);    
+}
+
+thead {
+    background-color: var(--gray);    
+}
+
+th, td {
+    padding: 2px 5px 2px 5px;
+  }
+
 .center {
     display: block;
     margin-left: auto;
@@ -86,6 +104,31 @@ button:last-child, .button:last-child {
     padding: 5px 10px 5px 10px;
     text-decoration: none;
     font-weight: bold;
+}
+
+/* colors */
+.success,
+.error,
+.warning,
+.secondary {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    color: var(--light);
+}
+
+.success {
+    background: var(--success);
+}
+
+.error {
+    background: var(--error);  
+}
+
+.warning {
+    background: var(--warning); 
+}
+
+.secondary {
+    background: var(--secondary);    
 }
 
 

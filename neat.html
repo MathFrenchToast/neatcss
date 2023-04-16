@@ -2,7 +2,7 @@
 
 <head>
 
-    <title>Neat CSS</title>
+    <title>CNeat CSS</title>
 
     <link rel="stylesheet" type="text/css" href="neat.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
@@ -16,43 +16,39 @@
     <a class="home" href="neat.html">↖</a>
 
 
-    <h1>Neat CSS</h1>
+    <h1>CNeat CSS</h1>
+    
+    <p>CNeat CSS is my colored version of Neat CSS. 
+       Original project can be found on <a href="https://github.com/codazoda/neatcss">Github</a>
+       Color scheme is inspired from <a href="https://purecss.io">Pure CSS</a>
+    </p>
 
     <p>Rapidly build efficient sites with <em>Neat</em>, the minimalist css framework.</p>  
 
-    <ol>
-        <li><a href="#download">Download</a></li>
+    <ol>        
         <li><a href="#about">About</a></li>
         <li><a href="#start">Getting Started</a></li>
         <li><a href="#uses">Uses</a></li>
         <li><a href="#customizing">Customizing</a></li>
         <li><a href="#decisions">Design Decisions</a></li>
         <li><a href="#contributing">Contributing</a></li>
-        <li><a href="#github">GitHub</a></li>
     </ol>
-
-    <h2 id="download">Download</h2>
-
-    <p><a href="https://github.com/codazoda/neatcss/archive/v0.1.0.zip">Neat CSS 0.1.0</a> &mdash; 26 September 2022</p>
-
-
+    
     <h2 id="about">About</h2>
 
-    <img src="https://neat.joeldare.com/images/neat-screenshot.png" class="bordered">
+    <img src="https://neat.joeldare.com/images/neat-screenshot.png" class="bordered">    
     
-    <p>Neat is a simple HTML template. It's tiny, opinionated, and made to last. It's created by Joel Dare and heavily inspired by other minimalist sites like <a href="https://100r.co">Hundred Rabbits</a> and dozens of similar blogs.</p>
+    <p>Original Author, presentation: Neat is a simple HTML template. It's tiny, opinionated, and made to last. It's created by Joel Dare and heavily inspired by other minimalist sites like <a href="https://100r.co">Hundred Rabbits</a> and dozens of similar blogs.</p>
+    <p>Neat is about 2Kb and that is not minified or compressed. This documentation adds a few more bytes. "That's pretty neat!"</p>
 
-    <p>Neat is about 2Kb and that is not minified or compressed. This documentation adds a few more bytes.</p>
-
-    <p>"That's pretty neat!"</p>
-
+    <p><a href="https://github.com/MathFrenchToast/neatcss">CNeat CSS on Github</a></p>
 
     <h2 id="start">Getting Started</h2>
 
     <p>Grab the <em>neat.css</em> and <em>neat.html</em> files.</p>
 
-    <pre><code>curl -O https://neat.joeldare.com/neat.css
-curl -O https://neat.joeldare.com/neat.html</code></pre>
+    <pre><code>curl -O https://raw.githubusercontent.com/MathFrenchToast/neatcss/master/neat.css
+curl -O https://raw.githubusercontent.com/MathFrenchToast/neatcss/master/neat.html</code></pre>
 
     <p>Then copy <em>neat.html</em> to <em>index.html</em> and make your changes. Use <em>neat.html</em> as a reference.</p>
 
@@ -134,6 +130,11 @@ curl -O https://neat.joeldare.com/neat.html</code></pre>
     <pre>&lt;input type="submit" value="Button"&gt;</pre>
 
     <button class="center">Button</button>
+    <p>Colored button - taking advantage of class precedence</p>
+    <p>
+        <button class="secondary">Button Tag</button>
+        <a href="#" class="button warning">A tag warning </a>
+    </p>
 
     <h3>Input Fields</h3>
 
@@ -173,15 +174,81 @@ curl -O https://neat.joeldare.com/neat.html</code></pre>
 
     <p>You can throw the <em>center</em> class on almost anything you want to center, including a <em>div</em> tag.
 
+    <h3>tables</h3>
+
+    <div class="row">
+        <div class="column">
+
+    <table >
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Honda</td>
+                <td>Accord</td>
+                <td>2009</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Toyota</td>
+                <td>Camry</td>
+                <td>2012</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hyundai</td>
+                <td>Elantra</td>
+                <td>2010</td>
+            </tr>
+        </tbody>
+    </table>
+
+    </div>
+    <div class="column">
+        <table >
+            <thead >
+                <tr class="secondary">
+                    <th>#</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Honda</td>
+                    <td>Accord</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Toyota</td>
+                    <td>Camry</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Hyundai</td>
+                    <td>Elantra</td>
+                    <td>2010</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
     <h2 id="contributing">Contributing</h2>
     
-    <p>Neat is distributed as open-source under the MIT license.</p>
+    <p>CNeat follow Neat license and is distributed as open-source under the MIT license.</p>
 
-    <p>Anything related to <em>Neat</em> is fair game for discussion. Anyone who's interested is welcome to join in the conversation. If you find a problem or have a suggestion, feel free to <a href="https://github.com/codazoda/neatcss/issues">create an issue</a> on GitHub. I'm also happy to review code change requests. To do that, fork the project and create a pull request or just <a href="mailto:joel@joeldare.com">email me</a> a diff. Feedback and discussions will lead to better ideas for future improvements.</p>
-
-    <h2 id="github">GitHub</h2>
-
-    <p>You'll find <a href="https://github.com/codazoda/neatcss">Neat CSS on GitHub</a>.</p>
 
 </body>
 
