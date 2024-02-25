@@ -52,19 +52,29 @@ pre {
     overflow: auto;
 }
 
-button, .button, input[type=submit] {
+button, .button, .label, input[type=submit] {
     display: inline-block;
     background-color: var(--dark);
     color: var(--light);
-    font-size: 1em;
-    text-align: center;
-    padding: 8px;
-    margin-right: 5px;
-    border-radius: 5px;
+    text-align: center;    
     text-decoration: none;
     border: none;
     line-height: normal;
     cursor: pointer;
+}
+
+button, .button, input[type=submit] {
+    font-size: 1em;
+    padding: 8px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.label {
+    font-size: 0.5em;
+    padding: 5px;
+    margin-right: 2px;
+    border-radius: 2px;
 }
 
 
@@ -110,7 +120,8 @@ th, td {
 .success,
 .error,
 .warning,
-.secondary {
+.secondary
+.gray {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     color: var(--light);
 }
@@ -129,6 +140,10 @@ th, td {
 
 .secondary {
     background: var(--secondary);    
+}
+
+.gray {
+    background: var(--gray);    
 }
 
 
